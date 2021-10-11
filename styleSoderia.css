@@ -43,8 +43,16 @@
 float: right;
 color: red;
 text-decoration: none;
+margin-left: 2rem;
 
 }
+
+.titlepag{
+    display: inline;
+    text-decoration: none;
+    color: white;
+
+    }
 
 /*--------------------VIDEO-----------------*/
 
@@ -64,30 +72,28 @@ text-decoration: none;
 </seccion>
 */
 .banervideo {
-    height: 200px;
     width: 100%;
+    height: 200px;
+
     top: 0;
+    position: relative;
 
 }
 
-.banervideo video {
-    height: 200px;
+.banervideo img {
+    
     position: absolute;
+    display: block;
     width: 100%;
+    max-height: 200px;
+
     top: 0;
     left: 0;
     z-index: -2;
     
 }
 
-.banervideo .video video{
-    
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    position: absolute;
 
-}
 
 .banervideo .banerblack {
     background-color: rgba(0,0,0,0.5);
@@ -121,7 +127,9 @@ text-decoration: none;
 
 /*--------------------TABLA-----------------*/
 
-
+.paneloculto{
+    display:none;
+}
 
 #title{
 
@@ -132,7 +140,7 @@ text-decoration: none;
 
 
 
-.panel{
+.panel, .paneloculto{
     background-color: rgb(234, 248, 106);
 }
 
@@ -153,22 +161,21 @@ text-decoration: none;
 .contenedor{
     display: grid;
     grid-template-columns: repeat(6, auto);
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     gap: 10px;
 }
-.panel,.mes10,.mes11,.mes12,.mes1,.mes2{
+.panel,.paneloculto,.mes10,.mes11,.mes12,.mes1,.mes2{
     
     font-style: oblique;
     font-size: 1rem;
     text-align: left;
-
     border-style: solid;
  
    
 }
 
-.panel tr,.mes10 tr,.mes11 tr,.mes12 tr,.mes1 tr,.mes2 tr{
+.panel tr,.paneloculto tr,.mes10 tr,.mes11 tr,.mes12 tr,.mes1 tr,.mes2 tr{
     display: grid;
     grid-template-rows: repeat(13,2.5px) ;
 }
@@ -187,4 +194,116 @@ text-decoration: none;
 
 #remanente10, #remanente11, #remanente12, #remanente1, #remanente2, #colorasistencia{
     background-color: rgb(235, 253, 132);
+}
+
+@media screen and (max-width:330px) {
+    /* BANNER*/
+
+    .baner{
+        position: absolute;
+        position: fixed;
+        background-color: rgb(24, 34, 34);
+        height: 25px;
+        padding-bottom: 0rem;
+        width: 100%;
+        top: 0;
+        margin-left: -8px;
+        
+        
+    }
+    
+    .baner div a {
+       
+        border-color: rgb(42, 51, 51);
+        margin-right: 1rem;
+        font-size: 0.5px;
+        text-decoration: none;
+        color: white;
+        padding: 0rem;
+        margin-left: 1rem;
+    }
+    
+    .btnn {
+    
+        float: right;
+        text-decoration: none;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        display: inline;
+        margin: 0rem;
+        
+        }
+    
+    .baner .escala {
+    
+    float: right;
+    color: red;
+    text-decoration: none;
+    display: inline;
+    margin-left: 1rem;
+    
+    }
+
+    .titlepag{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    
+    }
+    .banervideo{
+        height: 100px;
+    }
+    .banervideo img {
+    
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-height: 100px;
+    
+        top: 0;
+        left: 0;
+        z-index: -2;
+        
+    }
+    .banerblack p{
+        font-size: 20px;
+        padding: 1rem!important;
+
+        
+    }
+
+    .banervideo .banerblack {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        height: 100px;
+        width: 102%;
+        font-size: 30px;
+        text-align: center;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        margin-left: -8px;
+    }
+
+
+        
+    #title{
+
+        background-color: cadetblue;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*CONTENERDO*/
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 5px;
+    }  
+
+    .paneloculto{
+        display:inline;
+    }
 }
