@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="esp">
+<link rel="stylesheet" href="./styleSoderia.css">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sueldo Soderia</title>
+<link rel="icon" href="./recursos/sifon soda.png" type="png" sizes="32x32">
+
+
+<header>
+
+    <section class="baner" id="baner">
+
+        <div>
+            <a class="pmes" href="http://www.fataga.com.ar/pag_web/esc_salarial.php">Sutiaga</a>
+            <a class="escala" href="./Escala Soda Mixto 2020-21 (1).pdf" target="_blank">Remuneraciòn 2021</a>
+            <a class="escala" href="https://www.argentina.gob.ar/interior/feriados-nacionales-2021" target="_blank">Feriados 2021</a>
+
+
+        </div>
+
+    </section>      
+
+</header>
+
+<!--------VIDEO BANER------------------->
+
+<section class="banervideo">
+
+    <div class="video">
+<!--------<!-loop muted autoplay-->
+
+        <img src="./sifon.jpg"  ></img>
+    </div>
+
+
+    <div class="banerblack">
+
+        <p>Sueldo de la Soderia</p>
+
+    </div>
+
+</section>
+<!----------------VIDEO BANER------------------->
+
+
+<hr>
+<hr>
+
+<!------------------TABLA------------------->
+<body>
+
+
+
+<br>
+<br>
+<!--
+                                         2da tabla responsiva
+-->
+
+<div class="contenedor">
+   
+    <table class="panel">
+        <tr id="title">
+            <th>Panel</th>
+        </tr>
+        <tr>
+            <th>Sueldo</th>
+        
+        </tr>
+        <tr>
+            <th>Dias del mes totales</th>
+        
+        </tr>
+        <tr>
+            <th>Sueldo por dia</th>
+        
+        </tr>
+        <tr>
+            <th id="colorasistencia">Asistencia</th>
+        
+        </tr>
+        <tr class="rojoclaro">
+            <th>Faltas en el mes</th>
+        
+        </tr>
+        <tr class="rojo">
+            <th>Descuentos por faltar</th>
+        
+        </tr>
+        <tr>
+            <th>Adelantos pedidos</th>
+        
+        </tr>
+        <tr>
+            <th>Aguinaldo</th>
+        
+        </tr>
+        <tr class="verde">
+            <th>Total a cobrar</th>
+        
+        </tr>
+        <tr>
+            <th>Abonado</th>
+        
+        </tr>
+        <tr>
+            <th id="remanente">Remanente</th>
+        
+        </tr>
+        <tr>
+            <th>Accionar</th>
+        
+        </tr>
+
+    </table>  
+    
+    <table class="mes10">
+        <tr id="title">
+            <th>Octubre</th>
+        </tr>
+        <tr>
+            <th id="sueldo10"> 86.195 $ </th> 
+        </tr>
+        <tr>
+            <td id="diasmes10">26</td>
+        </tr>
+        <tr>
+            <th id="sueldodia10"></th>
+        </tr>
+        <tr>
+            <th >14</th>
+        </tr>
+        <tr>
+            <th id="faltas10">12</th>
+        </tr>
+        <tr>
+            <th id="descuentos10"></th> 
+        </tr>
+        <tr>
+            <th><input id="adelanto10"></input></th>  
+        </tr>
+        <tr>
+            <th>------------------------------</th>   
+        </tr>
+        <tr>
+            <th id="cobro10"></th>
+        </tr>
+        <tr>
+            <th><input id="abonado10"></input></th> 
+        </tr>
+        <tr>
+            <th id="remanente10"></th>
+        </tr>
+        <tr>
+            <th><button onclick="btn10()">CALCULAR</button></th> 
+        </tr>
+
+    </table> 
+
+    <table class="mes11">
+        <tr id="title">
+            <th>Noviembre</th>
+        </tr>
+        <tr>
+            <th id="sueldo11"> 86.195 $ </th> 
+        </tr>
+        <tr>
+            <td id="diasmes11">26</td>
+        </tr>
+        <tr>
+            <th id="sueldodia11"></th>
+        </tr>
+        <tr>
+            <th >12</th>
+        </tr>
+        <tr>
+            <td id="faltas11">14</td>
+        </tr>
+        <tr>
+            <th id="descuentos11"></th> 
+        </tr>
+        <tr>
+            <th><input id="adelanto11"></input></th>  
+        </tr>
+        <tr>
+            <th>------------------------------</th>   
+        </tr>
+        <tr>
+            <th id="cobro11"></th>
+        </tr>
+        <tr>
+            <th><input id="abonado11"></input></th> 
+        </tr>
+        <tr>
+            <th id="remanente11"></th>
+        </tr>
+        <tr>
+            <th><button onclick="btn11()">CALCULAR</button></th> 
+        </tr>
+
+    </table> 
+
+    <table class="mes12">
+        <tr id="title">
+            <th>Diciembre</th>
+        </tr>
+        <tr>
+            <th id="sueldo12"> 86.195 $ </th> 
+        </tr>
+        <tr>
+            <td id="diasmes12">27</td>
+        </tr>
+        <tr>
+            <th id="sueldodia12"></th>
+        </tr>
+        <tr>
+            <th >14</th>
+        </tr>
+        <tr>
+            <td id="faltas12">13</td>
+        </tr>
+        <tr>
+            <th id="descuentos12"></th> 
+        </tr>
+        <tr>
+            <th><input id="adelanto12"></input></th>  
+        </tr>
+        <tr>
+            <th>------------------------------</th>   
+        </tr>
+        <tr>
+            <th id="cobro12"></th>
+        </tr>
+        <tr>
+            <th><input id="abonado12"></input></th> 
+        </tr>
+        <tr>
+            <th id="remanente12"></th>
+        </tr>
+        <tr>
+            <th><button onclick="btn12()">CALCULAR</button></th> 
+        </tr>
+
+    </table> 
+
+    <table class="mes1">
+        <tr id="title">
+            <th>Enero</th>
+        </tr>
+        <tr>
+            <th id="sueldo1"> 86.195 $ </th> 
+        </tr>
+        <tr>
+            <td id="diasmes1">26</td>
+        </tr>
+        <tr>
+            <th id="sueldodia1"></th>
+        </tr>
+        <tr>
+            <th >13</th>
+        </tr>
+        <tr>
+            <td id="faltas1">13</td>
+        </tr>
+        <tr>
+            <th id="descuentos1"></th> 
+        </tr>
+        <tr>
+            <th><input id="adelanto1"></input></th>  
+        </tr>
+        <tr>
+            <th>------------------------------</th>   
+        </tr>
+        <tr>
+            <th id="cobro1"></th>
+        </tr>
+        <tr>
+            <th><input id="abonado1"></input></th> 
+        </tr>
+        <tr>
+            <th id="remanente1"></th>
+        </tr>
+        <tr>
+            <th><button onclick="btn1()">CALCULAR</button></th> 
+        </tr>
+
+    </table> 
+
+    <table class="mes2">
+        <tr id="title">
+            <th>Febrero</th>
+        </tr>
+        <tr>
+            <th id="sueldo2"> 86.195 $ </th> 
+        </tr>
+        <tr>
+            <td id="diasmes2">24</td>
+        </tr>
+        <tr>
+            <th id="sueldodia2"></th>
+        </tr>
+        <tr>
+            <th >12</th>
+        </tr>
+        <tr>
+            <td id="faltas2">12</td>
+        </tr>
+        <tr>
+            <th id="descuentos2"></th> 
+        </tr>
+        <tr>
+            <th><input id="adelanto2"></input></th>  
+        </tr>
+        <tr>
+            <th>------------------------------</th>   
+        </tr>
+        <tr>
+            <th id="cobro2"></th>
+        </tr>
+        <tr>
+            <th><input id="abonado2"></input></th> 
+        </tr>
+        <tr>
+            <th id="remanente2"></th>
+        </tr>
+        <tr>
+            <th><button onclick="btn2()">CALCULAR</button></th> 
+        </tr>
+
+    </table> 
+
+</div>
+
+<br>
+<br>
+
+<hr>
+<hr>
+
+</th>
+<body bgcolor=" #D3D3D3";></body>
+
+
+
+
+<!-----------------------------------------------
+    
+    git remote add origin https://github.com/haader/SueldoSoderia.git
+git branch -M gh-pages
+git push -u origin gh-pages
+
+-------------------------------------------->
+
+<script src="soderiaScript.js"></script>
+
+<!--onload="funcionmayo(); botonjunio(); botonjulio();-->    
+<body >
+</html>
+

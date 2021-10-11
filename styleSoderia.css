@@ -1,0 +1,190 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.baner{
+    position: absolute;
+    position: fixed;
+    background-color: rgb(24, 34, 34);
+    height: 25px;
+    padding-bottom: 0rem;
+    width: 100%;
+    top: 0;
+    margin-left: -8px;
+    
+    
+}
+
+.baner div a {
+   
+    border-color: rgb(42, 51, 51);
+    margin-right: 4rem;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 0rem;
+    margin-left: 1rem;
+}
+
+.btnn {
+
+    float: right;
+    text-decoration: none;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+
+    margin: 0rem;
+    
+    }
+
+.baner .escala {
+
+float: right;
+color: red;
+text-decoration: none;
+
+}
+
+/*--------------------VIDEO-----------------*/
+
+/*
+<seccion class="banervideo">
+    
+    <div class="video">
+         <video src="./recursos/sifon.mp4" loop autoplay muted></video>
+    </div>
+
+    <div class="banerblack">
+
+        <p>en esta pàgina se controla el sueldo de la soderia</p>
+
+    </div>
+
+</seccion>
+*/
+.banervideo {
+    height: 200px;
+    width: 100%;
+    top: 0;
+
+}
+
+.banervideo video {
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    
+}
+
+.banervideo .video video{
+    
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+
+}
+
+.banervideo .banerblack {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    height: 200px;
+    width: 102%;
+    font-size: 30px;
+    text-align: center;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    margin-left: -8px;
+}
+
+
+.banervideo .banerblack p{
+    padding: 75px 0 ;
+    
+}
+
+
+
+/*--------------------EN DESUSO-----------------*/
+
+.mes10 tr, .mes11 tr,.mes12 tr,.mes1 tr,.mes2 tr{
+    background-color: rgb(238, 128, 210);
+    font-size: 20px;
+}
+
+
+
+/*--------------------TABLA-----------------*/
+
+
+
+#title{
+
+    background-color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.panel{
+    background-color: rgb(234, 248, 106);
+}
+
+.rojo {
+    background-color: rgb(228, 13, 13);
+}
+.rojoclaro {
+    background-color: rgb(151, 62, 62);
+}
+.verde {
+    background-color: rgb(20, 218, 20);
+}
+
+
+
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin-left: 8rem;
+    margin-right: 8rem;
+    gap: 10px;
+}
+.panel,.mes10,.mes11,.mes12,.mes1,.mes2{
+    
+    font-style: oblique;
+    font-size: 1rem;
+    text-align: left;
+
+    border-style: solid;
+ 
+   
+}
+
+.panel tr,.mes10 tr,.mes11 tr,.mes12 tr,.mes1 tr,.mes2 tr{
+    display: grid;
+    grid-template-rows: repeat(13,2.5px) ;
+}
+
+
+#faltas10, #faltas11, #faltas12, #faltas1, #faltas2{
+    background-color: rgb(151, 62, 62);
+}
+#descuentos10, #descuentos11, #descuentos12, #descuentos1, #descuentos2 {
+    background-color: rgb(228, 13, 13);
+}
+
+#cobro10,#cobro11,#cobro12,#cobro1,#cobro2, #asistencia {
+    background-color: rgb(20, 218, 20);
+}
+
+#remanente10, #remanente11, #remanente12, #remanente1, #remanente2, #colorasistencia{
+    background-color: rgb(235, 253, 132);
+}
