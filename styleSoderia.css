@@ -119,14 +119,19 @@ margin-left: 2rem;
 /*--------------------EN DESUSO-----------------*/
 
 .mes10 tr, .mes11 tr,.mes12 tr,.mes1 tr,.mes2 tr{
-    background-color: rgb(238, 128, 210);
+    
     font-size: 20px;
 }
 
 
 
 /*--------------------TABLA-----------------*/
-
+.backgroun1{
+background-color: orange;
+}
+.backgroun2{
+background-color: rgb(224, 183, 107);
+}
 .paneloculto{
     display:none;
 }
@@ -182,18 +187,19 @@ margin-left: 2rem;
 
 
 #faltas10, #faltas11, #faltas12, #faltas1, #faltas2{
-    background-color: rgb(151, 62, 62);
+    color: rgb(173, 9, 9);
+    
 }
 #descuentos10, #descuentos11, #descuentos12, #descuentos1, #descuentos2 {
-    background-color: rgb(228, 13, 13);
+    color: rgb(228, 13, 13);
 }
 
 #cobro10,#cobro11,#cobro12,#cobro1,#cobro2, #asistencia {
-    background-color: rgb(20, 218, 20);
+    color: rgb(20, 218, 20);
 }
 
 #remanente10, #remanente11, #remanente12, #remanente1, #remanente2, #colorasistencia{
-    background-color: rgb(235, 253, 132);
+    color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width:725px) {
