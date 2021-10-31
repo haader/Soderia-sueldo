@@ -145,20 +145,6 @@ background-color: rgb(224, 183, 107);
 
 
 
-.panel, .paneloculto{
-    background-color: rgb(234, 248, 106);
-}
-
-.rojo {
-    background-color: rgb(228, 13, 13);
-}
-.rojoclaro {
-    background-color: rgb(151, 62, 62);
-}
-.verde {
-    background-color: rgb(20, 218, 20);
-}
-
 
 
 
@@ -195,7 +181,7 @@ background-color: rgb(224, 183, 107);
 }
 
 #cobro10,#cobro11,#cobro12,#cobro1,#cobro2, #asistencia {
-    color: rgb(20, 218, 20);
+    color: rgb(20, 95, 20);
 }
 
 #remanente10, #remanente11, #remanente12, #remanente1, #remanente2, #colorasistencia{

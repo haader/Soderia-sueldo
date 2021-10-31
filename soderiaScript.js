@@ -11,8 +11,8 @@ function btn10(){
     /*-------------------------- DIAS FALTADOS EN EL MES --(fMES)------------------------------------ */
 
 
-        var F10=12;
-        
+        var F10=document.getElementById("faltas10").innerHTML;
+        console.log("la cantidad de faltas son="+F10);
         
 
 
@@ -39,7 +39,8 @@ function btn10(){
     /*--------------------------ADELANTOS-PEDIDOS (apMES)------------------------------------- */
 
 
-    var adelantos=document.getElementById('adelanto10').value;
+    var adelantos=document.getElementById('adelanto10').innerHTML;;
+    console.log("adelantos= "+adelantos);
 
 
 
@@ -54,7 +55,7 @@ function btn10(){
 
     /*-------------------------------------ABONADO (aMES) Y REMANENTE-----(rMES)----------------------------------------------- */
 
-    var abonado=document.getElementById('abonado10').value
+    var abonado=document.getElementById('abonado10').innerHTML;
 
     document.getElementById('remanente10').innerHTML= (Number(sueldotc)-Number(abonado));
 
