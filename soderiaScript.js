@@ -82,7 +82,7 @@ function btn11(){
     /*-------------------------- DIAS FALTADOS EN EL MES --(fMES)------------------------------------ */
 
 
-        var F10=14;
+        var F10=13;
         
         
 
@@ -110,7 +110,7 @@ function btn11(){
     /*--------------------------ADELANTOS-PEDIDOS (apMES)------------------------------------- */
 
 
-    var adelantos=document.getElementById('adelanto11').value;
+    var adelantos=document.getElementById('adelanto11').innerHTML; // es innerHTML NO value!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
