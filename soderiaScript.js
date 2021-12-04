@@ -1,4 +1,150 @@
 
+/************************************REMUNERACIÓN NO ACTUALIZADA*********************************************/ 
+
+function btn10X(){
+    
+        
+    /*-------------------------- DIAS LABORABLES EN EL MES --(dMES)------------------------------------ */
+
+        var D10=26;
+        
+
+    /*-------------------------- DIAS FALTADOS EN EL MES --(fMES)------------------------------------ */
+
+
+        var F10=document.getElementById("faltas10X").innerHTML;
+        console.log("la cantidad de faltas son="+F10);
+        
+
+
+    /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
+
+        var sueldo=86195;
+        
+
+        var diasueldo= (sueldo/D10)
+
+    /*-------------------------- SUELDO DIARIO --(sdMES)------------------------------------ */
+
+        
+
+        document.getElementById('sueldodia10X').innerHTML=diasueldo;
+
+
+        
+    /*--------------------------DESCUENTOS POR FALTAR--(dfMES)------------------------------------ */
+
+    document.getElementById('descuentos10X').innerHTML=(F10*diasueldo);
+    var descuentosporfaltar=(F10*diasueldo);
+
+    /*--------------------------ADELANTOS-PEDIDOS (apMES)------------------------------------- */
+
+
+    var adelantos=document.getElementById('adelanto10X').innerHTML;;
+    console.log("adelantos= "+adelantos);
+
+
+
+    var dtotal=(Number(adelantos) + Number(descuentosporfaltar));
+
+
+    /*----------------------------TOTAL A COBRAR (tcMES)---(SUELDO MENOS DESCUENTOS POR FALTAR)------------------------------------ */
+
+
+    document.getElementById('cobro10X').innerHTML=(Number(sueldo)- Number(dtotal));
+    var sueldotc=(Number(sueldo)- Number(dtotal));;
+
+    /*-------------------------------------ABONADO (aMES) Y REMANENTE-----(rMES)----------------------------------------------- */
+
+    
+    var abonado=34727;
+
+    document.getElementById('remanente10X').innerHTML= (Number(sueldotc)-Number(abonado));
+
+
+
+};
+
+                /*----------------------------------------------------------------------------------------- */
+                /*----------------------------------------------------------------------------------------- */
+                /*----------------------------------------------------------------------------------------- */
+                /*----------------------------------------------------------------------------------------- */
+                /*----------------------------------------------------------------------------------------- */
+
+
+
+function btn11X(){
+            
+        
+        /*-------------------------- DIAS LABORABLES EN EL MES --(dMES)------------------------------------ */
+
+        var D10=26;
+        
+
+    /*-------------------------- DIAS FALTADOS EN EL MES --(fMES)------------------------------------ */
+
+
+        var F10=13;
+        
+        
+
+
+    /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
+
+        var sueldo=86195;
+        
+
+        var diasueldo= (sueldo/D10)
+
+    /*-------------------------- SUELDO DIARIO --(sdMES)------------------------------------ */
+
+        
+
+        document.getElementById('sueldodia11X').innerHTML=diasueldo;
+
+
+        
+    /*--------------------------DESCUENTOS POR FALTAR--(dfMES)------------------------------------ */
+
+    document.getElementById('descuentos11X').innerHTML=(F10*diasueldo);
+    var descuentosporfaltar=(F10*diasueldo);
+
+    /*--------------------------ADELANTOS-PEDIDOS (apMES)------------------------------------- */
+
+
+    var adelantos=document.getElementById('adelanto11X').innerHTML; // es innerHTML NO value!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+    var dtotal=(Number(adelantos) + Number(descuentosporfaltar));
+
+
+    /*----------------------------TOTAL A COBRAR (tcMES)---(SUELDO MENOS DESCUENTOS POR FALTAR)------------------------------------ */
+
+
+    document.getElementById('cobro11X').innerHTML=(Number(sueldo)- Number(dtotal));
+    var sueldotc=(Number(sueldo)- Number(dtotal));;
+
+    /*-------------------------------------ABONADO (aMES) Y REMANENTE-----(rMES)----------------------------------------------- */
+
+    var abonado=40000;
+
+    document.getElementById('remanente11X').innerHTML= (Number(sueldotc)-Number(abonado));
+
+
+    
+
+
+        
+
+        
+        /*----------------------------------------------------------------------------------------- */
+    
+};
+
+/********************************************************REMUNERACIÓN ACTUALIZADA*********************************************/ 
+/********************************************************REMUNERACIÓN ACTUALIZADA*********************************************/ 
+/********************************************************REMUNERACIÓN ACTUALIZADA*********************************************/ 
 
 function btn10(){
     
@@ -18,7 +164,7 @@ function btn10(){
 
     /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
 
-        var sueldo=86195;
+        var sueldo=107594;
         
 
         var diasueldo= (sueldo/D10)
@@ -55,9 +201,9 @@ function btn10(){
 
     /*-------------------------------------ABONADO (aMES) Y REMANENTE-----(rMES)----------------------------------------------- */
 
-    var abonado=document.getElementById('abonado10').innerHTML;
+    var abonado=9727+25000;
 
-    document.getElementById('remanente10').innerHTML= (Number(sueldotc)-Number(abonado));
+    document.getElementById('remanente10').innerHTML= (Number(sueldotc)-Number(abonado)+" $");
 
 
 
@@ -89,7 +235,7 @@ function btn11(){
 
     /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
 
-        var sueldo=86195;
+        var sueldo=107594;
         
 
         var diasueldo= (sueldo/D10)
@@ -125,9 +271,9 @@ function btn11(){
 
     /*-------------------------------------ABONADO (aMES) Y REMANENTE-----(rMES)----------------------------------------------- */
 
-    var abonado=document.getElementById('abonado11').value
+    var abonado=40000;
 
-    document.getElementById('remanente11').innerHTML= (Number(sueldotc)-Number(abonado));
+    document.getElementById('remanente11').innerHTML= (Number(sueldotc)-Number(abonado)+" $");
 
 
     
@@ -166,7 +312,7 @@ function btn12(){
 
     /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
 
-        var sueldo=86195;
+        var sueldo=107594;
         
 
         var diasueldo= (sueldo/D10)
@@ -252,7 +398,7 @@ function btn1(){
 
 /*-------------------------- SUELDO MENSUAL --(MES)------------------------------------ */
 
-    var sueldo=86195;
+    var sueldo=107594;
     
 
     var diasueldo= (sueldo/D10)

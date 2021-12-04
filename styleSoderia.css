@@ -149,6 +149,17 @@ background-color: rgb(224, 183, 107);
 
 
 
+.contenedor1{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 10px;
+    background-color: darkgreen;
+}
+
+
+
 .contenedor{
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -172,20 +183,20 @@ background-color: rgb(224, 183, 107);
 }
 
 
-#faltas10, #faltas11, #faltas12, #faltas1, #faltas2{
+#faltas10X, #faltas11X,#faltas10, #faltas11, #faltas12, #faltas1, #faltas2{
     color: rgb(173, 9, 9);
     
 }
-#descuentos10, #descuentos11, #descuentos12, #descuentos1, #descuentos2 {
+#descuentos10X, #descuentos11X,#descuentos10, #descuentos11, #descuentos12, #descuentos1, #descuentos2 {
     color: rgb(228, 13, 13);
 }
 
-#cobro10,#cobro11,#cobro12,#cobro1,#cobro2, #asistencia {
+#cobro10X,#cobro11X,#cobro10,#cobro11,#cobro12,#cobro1,#cobro2, #asistencia {
     color: rgb(20, 95, 20);
 }
 
-#remanente10, #remanente11, #remanente12, #remanente1, #remanente2, #colorasistencia{
-    color: rgb(0, 0, 0);
+#remanente10X, #remanente11X,#remanente10, #remanente11, #remanente12, #remanente1, #remanente2{
+    color: rgb(3, 82, 16);
 }
 
 @media screen and (max-width:725px) {
@@ -287,6 +298,16 @@ background-color: rgb(224, 183, 107);
     }
 
     /*CONTENERDO*/
+
+    
+    .contenedor1{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 5px;
+    }  
+
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -294,6 +315,7 @@ background-color: rgb(224, 183, 107);
         margin-right: 1rem;
         gap: 5px;
     }  
+
 
     .paneloculto{
         display:inline;
